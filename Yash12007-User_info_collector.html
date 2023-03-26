@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yash12007</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <style>
+    body{
+      background-image: url('https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_960_720.jpg');
+      background-size: cover;
+      height: 960px;
+      width: 720px;
+      color: white;
+    }
+    nav{
+      height: 50px;
+      width: 100%;
+      background:black;
+      color:cyan;
+      position: absolute;
+      top:0px;
+      left:0px;
+      justify-content: center;
+      align-items: center;
+    }
+    #btn{
+      background: black;
+      color:cyan;
+      border-color: black;
+      border-width: 0px;
+    }
+    #url{
+      background: black;
+      color: cyan;
+      border-color: cyan;
+      border-radius:30px;
+      position: absolute;
+      left: 30px;
+      top: 80px;
+    }
+    .btn, .btn-primary{
+      position: absolute;
+      left: 500px;
+    }
+    #formyone, #formytwo, #formythree, #wels{
+      position: absolute;
+      top: 80px;
+    }
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <button id="btn" href="https://yash12007.github.io/Max">Home</button>
+        <button id="btn" href="https://yash12007.github.io/Max#About">About</button>
+        <button id="btn" href="#">Services</button>
+        <button id="btn" href="#">Contact</button>
+        <a id="demo"></a>
+      </ul>
+    </nav>
+    <div style="height:50px;"></div>
+    <div id="formyone">
+      <h1>Basic information</h1>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Middle name</label>
+        <input type="text" class="form-control" id="mname" placeholder="Middle name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Sir name</label>
+        <input type="text" class="form-control" id="sname" placeholder="Sir name">
+      </div>
+      <b>Select your gender</b>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">Male</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">Female</label>
+      </div>
+      <button onclick="conen()" type="button" class="btn btn-primary">Next</button>
+    </div>
+    
+    <div id="formytwo">
+      <h1>For verification</h1>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Phone number</label>
+        <input type="number" class="form-control" id="phn" placeholder="+000000000000">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Email">
+      </div>
+      <button onclick="ctwon()" type="button" class="btn btn-primary">Next</button>
+    </div>
+    
+    <div id="formythree">
+      <h1>Create Account</h1>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Create username</label>
+        <input type="text" class="form-control" id="usname" placeholder="xyz123">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Create password</label>
+        <input type="text" class="form-control" id="passone" placeholder="••••">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Conform password</label>
+        <input type="text" class="form-control" id="passtwo" placeholder="••••">
+      </div>
+      <button onclick="sub()" type="button" class="btn btn-primary">Submit</button>
+    </div>
+    <h1 id="wels"></h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+  </body>
+  <script>
+    var f1 = document.getElementById("formyone");
+    var f2 = document.getElementById("formytwo");
+    var f3 = document.getElementById("formythree");
+    var welcome = document.getElementById("wels");
+    welcome.setAttribute("style", "position:absolute; left:-5000px;");
+    f1.setAttribute("style", "position:absolute; left:0px;");
+    f2.setAttribute("style", "position:absolute; left:-5000px;");
+    f3.setAttribute("style", "position:absolute; left:-5000px;");
+    
+    function conen(){
+      f1.setAttribute("style", "position:absolute; left:-5000px;");
+      f2.setAttribute("style", "position:absolute; left:0px;");
+      f3.setAttribute("style", "position:absolute; left:-5000px;");
+    }
+    function ctwon(){
+      f1.setAttribute("style", "position:absolute; left:-5000px;");
+      f2.setAttribute("style", "position:absolute; left:-5000px;");
+      f3.setAttribute("style", "position:absolute; left:0px;");
+    }
+    var name = document.getElementById("name").value;
+    var mn = document.getElementById("mname").value;
+    var sn = document.getElementById("sname").value;
+    var pn = document.getElementById("phn").value;
+    var email = document.getElementById("email").value;
+    var usn = document.getElementById("usname").value;
+    var po = document.getElementById("passone").value;
+    var pt = document.getElementById("passtwo").value;
+    
+    function sub(){
+      var last = document.getElementById("formythree");
+      last.setAttribute("style", "position:absolute; left:-5000px;");
+      
+      welcome.setAttribute("style", "position:absolute; color:cyan; left:0px; top:80px;");
+      var name = document.getElementById("name").value;
+      var sn = document.getElementById("sname").value;
+      welcome.innerHTML = "Welcome "+name+" "+sn;
+      getLocation();
+    }
+    
+    var x = document.getElementById("demo");
+    function getLocation(){
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+        x.setAttribute("style", "color:red;");
+      }
+    }
+    function showPosition(position) {
+      x.innerHTML = "Your location: Latitude: " + position.coords.latitude +", Longitude: " + position.coords.longitude;
+      x.setAttribute("style", "color:cyan;");
+    }
+  </script>
+</html>
