@@ -15,5 +15,3 @@ Awesome projects made by HTML5, CSS3, JS (JavaScript) are here.
 <a href="https://www.medium.com/@Yash12007">Read articles on Medium</a>
 <br>
 <a href="https://yash12007.github.com">Read blogs on Blogger</a>
-<br>
-<a href="https://discord.gg/UGJ8HadC">Connect with Discord</a>
